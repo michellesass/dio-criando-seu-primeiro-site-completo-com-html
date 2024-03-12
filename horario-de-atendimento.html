@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="base.css">
 
     <style>
-        table tr::nth-child(even) {
-            background-color: azure;
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        table tr:hover td {
+            background-color: darkgray;
         }
     </style>
-    
+
 </head>
 <body>
     <div class="wrapper">
@@ -52,24 +61,39 @@
                     </li>
                 </ul>
 
-                <table summary="Tabela apresentando as serviços oferecidos pela clínica, o valor dos serviços e o horário de atendimento" border="1" width="500" cellspacing="5" callpadding="5" align="center" >
-                    <tr>
-                        <td>Serviços oferecidos</td>
-                        <td>Valor da consulta</td>
-                        <td>Horário de atendimento</td>
-                    </tr>
+                <table summary="Tabela apresentando as serviços oferecidos pela clínica, o valor dos serviços e o horário de atendimento" width="500" cellpadding="5" align="center" >
+                    
+                    <thead>
+                        <tr>
+                        <th colspan="3">Tabela com os serviços oferecidos e seus respectivos valores e horários</th>
+                        </tr>
 
-                    <tr>
-                        <td>Consultas Gerais</td>
-                        <td>R$300,00</td>
-                        <td>Segunda a Sexta: 08:00 - 18:00 <br> Sábado: 08:00 - 12:00</td>
-                    </tr>
+                        <tr id="1">
+                            <th title="Serviços oferecidos">Serviços</th>
+                            <th title="Valor da consulta">Valor</th>
+                            <th title="Horário de atendimento">Horário</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>Exames de imagem</td>
-                        <td>Valor a definir de acordo com o procedimento solicitado pelo médico</td>
-                        <td>Terça e Quinta: 13:00 - 17:00</td>
-                    </tr>
+                    <tbody>
+                        <tr id="2">
+                            <td>Consultas Gerais</td>
+                            <td>R$300,00</td>
+                            <td>Segunda a Sexta: 08:00 - 18:00 <br> Sábado: 08:00 - 12:00</td>
+                        </tr>
+
+                        <tr id="3">
+                            <td>Exames de imagem</td>
+                            <td>Valor a definir de acordo com o procedimento solicitado pelo médico</td>
+                            <td>Terça e Quinta: 13:00 - 17:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vacinas</td>
+                            <td>R$30,00 (por dose)</td>
+                            <td>Segunda a Sexta: 09:00 - 17:00</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
     
