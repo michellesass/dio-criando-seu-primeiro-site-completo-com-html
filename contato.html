@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Médica Saúde & Bem-Estar</title>
     <link rel="stylesheet" href="base.css">
+
+    <style>
+        label {
+            display: inline-block;
+            width: 150px; /* Largura fixa para os rótulos */
+            text-align: right; /* Alinhamento do texto à direita para os rótulos */
+            margin-right: 10px; /* Espaçamento entre os rótulos e os campos de entrada */
+            vertical-align: top; /* Alinha o texto na parte superior */
+        }
+    
+        input, textarea {
+            width: 300px; /* Largura fixa para os campos de entrada */
+        }
+    </style>
+
 </head>
 <body>
     <div class="wrapper">
@@ -45,6 +60,21 @@
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.279448507268!2d-48.68604049483035!3d-28.107513983368182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526cdce9a2fa011%3A0x1839be4d4ce6e269!2sLoteamento%20Campo%20Duna!5e0!3m2!1spt-BR!2sbr!4v1710264337153!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                <h2>Entre em contato</h2>
+                <p>Ficou alguma dúvida, sugestão ou reclamação? Preencha o formulário abaixo.</p>
+
+                <form name="faleconosco" autocomplete="off" target="_blank" onsubmit="alert('Mensagem enviada com sucesso!')" method="post" action="#">
+                    <label>Nome Completo*:</label> <input type="text" name="name"/><br>
+                    <label>Seu email*:</label> <input type="email" name="email"/><br>
+                    <label>Telefone*:</label> <input type="tel" name="telefone" pattern="[0-9]{10,}" title="Informe um número de telefone válido (apenas números, no mínimo 10 caracteres)"
+                    /><br>
+                    <label>Assunto*: </label> <input type="text" name="subject"/><br>
+                    <label>Mensagem*:</label>
+                    <textarea rows="10" cols="50" name="message"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
 
             </div>
     
