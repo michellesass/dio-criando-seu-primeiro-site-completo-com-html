@@ -9,4 +9,4 @@ A ideia desse projeto foi criar um site de uma clínica médica contendo o segui
 
 Todas as páginas deveriam seguir um padrão pré-definido. Como esta formação é específica para HTML, não aprendemos sobre CSS ainda, por isso foi nos disponibilizado um arquivo com um template html para utilizar como base. 
 
-Todas as informações sobre a clínica são fictícias e foram elaboradas com o auxílio de IA somente para fins educacionais.
+Todas as informações sobre a clínica são fictícias e foram elaboradas com o auxílio de IA para a realização deste projeto.
